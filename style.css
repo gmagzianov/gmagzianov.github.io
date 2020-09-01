@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: Grey;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  background-color: white;
+  max-width: 414px;
+  height: 896px;
+  margin: 0 auto;
+}
+
+li {
+  display: flex;
+}
+nav {
+  padding: 20px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+nav h1 {
+  text-align: center;
+  font-size: 25px;
+}
+.btn-back {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 20px;
+  color: transparent;
+  border: 2px solid transparent;
+  border-left-color: #1f89fe;
+  border-bottom-color: #1f89fe;
+  display: block;
+  transform: rotate(45deg) translateY(-50%);
+  top: 50%;
+}
+
+.location-block {
+  padding: 20px;
+  background: linear-gradient(to bottom, #fcfefe, #83c5e2);
+}
+.location-block h2 {
+  font-size: 18px;
+  text-align: center;
+}
+.flexrow {
+  display: flex;
+  align-items: center;
+}
+.flexrow .col.time {
+  flex-basis: 70px;
+}
+.wrapper-list{
+  padding-bottom: 10px;
+    overflow-y: scroll;
+    height: 770px;
+}
+.list-item {
+  list-style: none;
+  position: relative;
+  padding: 25px 0;
+  display: block;
+}
+.list-item::after {
+  content: "";
+  width: calc(100% - 70px);
+  height: 1px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.list-item:not(:last-child)::after {
+  background: #d0d0d0;
+}
+.list-item time {
+  text-align: center;
+  color: #208bff;
+  text-transform: capitalize;
+}
+time.red {
+  color: #fb2222;
+}
+time span {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: normal;
+}
+.list-item h4 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.list-item p {
+  font-weight: 500;
+}
+.list-item .btn-next {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 20%;
+  color: transparent;
+  border: 2px solid transparent;
+  border-right-color: #1f89fe;
+  border-top-color: #1f89fe;
+  display: block;
+  transform: rotate(45deg) translateY(-50%);
+  top: 50%;
+}
